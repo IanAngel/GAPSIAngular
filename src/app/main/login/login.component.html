@@ -1,0 +1,11 @@
+<div fxFlex fxLayout="column" fxLayoutAlign="space-around stretch"  fxLayoutGap="10px">    
+    <app-toolbar></app-toolbar>        
+    <div fxLayout="column" fxLayoutAlign="space-evenly center" fxLayoutGap="10px">
+        <img src="{{logo}}" alt="" height="150px" width="180px">                
+        <h1>{{this.candidato}}</h1>
+        <button color="primary" (click)="continuar()">Continuar</button>
+        <div fxLayoutAlign="end end" class="version">
+            <h1>Version {{this.version}}</h1>        
+        </div>
+    </div>    
+</div>
