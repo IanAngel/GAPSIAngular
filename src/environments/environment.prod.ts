@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  HOST: 'http://localhost:18000/TestAppGAPSIWeb/api'
 };

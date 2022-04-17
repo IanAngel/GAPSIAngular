@@ -1,0 +1,15 @@
+h1{
+    font-size: 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+.version {
+    color: black;
+    border: 2px solid gray;    
+    width: 100%;
+    padding-top: 5px;
+} 
+
+.version h1{
+    font-size: 12px;
+}

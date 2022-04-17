@@ -1,0 +1,17 @@
+.toolbar-container {
+  height: max-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+mat-toolbar {
+  background-color: gainsboro;
+  max-width: 100%;
+}
+.toolbar-space {
+  flex: 1 1 auto;
+}
+
+.iconos {
+  text-align: left;
+}

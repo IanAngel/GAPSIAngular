@@ -1,0 +1,33 @@
+<form [formGroup]="formProveedor" #frmProveedor="ngForm" (ngSubmit)="continuar()" fxFlex fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="space-evenly center">
+    <h1 mat-dialog-title>{{operacion}} PROVEEDOR</h1>
+    <div mat-dialog-content  >
+        <div fxLayout="column" fxLayoutAlign="center">             
+            <img mat-card-image [src]="proveedor!.urlImg" alt="" width="50%" height="50%">
+            <div [hidden]="true">
+                <mat-form-field appearance="fill">                    
+                    <input matInput [(ngModel)]="proveedor!.idProveedor" formControlName="idProveedor">
+                </mat-form-field>                
+            </div>
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput [(ngModel)]="proveedor!.nombre" required formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Razon Social</mat-label>
+                <input matInput [(ngModel)]="proveedor!.razonSocial" required formControlName="razonSocial">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Dirección</mat-label>
+                <input matInput [(ngModel)]="proveedor!.direccion" required formControlName="direccion">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Imagen</mat-label>
+                <input matInput [(ngModel)]="proveedor!.urlImg" required formControlName="urlImg">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button color="primary" type="submit" [disabled]="frmProveedor.invalid">Continuar</button>
+        <button mat-raised-button color="accent" type="button" (click)="cerrar()">Cerrar</button>
+    </div>
+</form>
